@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Template.master.cs" Inherits="AntunIT.Template" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Antun IT</title>
+    <link href="Style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div class="infoMessage" id="infoMessage" runat="server">
+            <asp:Label ID="InfoLabel" runat="server" Text="" Visible="true"></asp:Label>
+        </div>
+        <asp:Panel ID="errorMessage" CssClass="errorMessage" runat="server" Visible="false">
+            <asp:Label ID="ErrorLabel" runat="server" Text="" Visible="true"></asp:Label>
+        </asp:Panel>
+
+        <header class="header">
+            <h1>Antun IT</h1> 
+        </header>
+        <div class ="navigacija" id="navigacija" runat="server">
+             <nav>
+                   <ul>
+                        <li><a href="Index.aspx">Početna</a></li>
+                        <li><a href="UserProfile.aspx"><asp:Label runat="server" Text="" ID="NameLbl"></asp:Label></a>
+                             <ul>
+                                <li><a href="UserProfile.aspx">Moj profil</a></li>
+                                <li><a href="UpdateProfile.aspx">Uredi moje podatke</a></li>
+                                <li><a href="ChangePassword.aspx">Promijeni lozinku</a></li>
+                             </ul>
+                        </li>
+                       <li><a href="Printers.aspx">Pisači</a>
+                             <ul>
+                                <li><a href="Printers.aspx">Svi pisači</a></li>
+                                <li><a href="DodajPrinter.aspx">Dodaj pisač</a></li>                       
+                                <li><a href="ObrisiPrinter.aspx">Ukloni pisač</a></li>                       
+                                <li><a href="PremjestiPrinter.aspx">Premjesti pisač</a></li>
+                                <li><a href="DodajTintu.aspx">Dodaj tintu</a></li>
+                                <li><a href="DodajPapir.aspx">Dodaj papir</a></li>
+                             </ul>
+                        </li>
+                        <li><a href="EvidencijaMain.aspx">Evidencija</a>
+                             <ul>
+                                <li><a href="TintePoPrinteru.aspx">Evidencija titnte po printeru</a></li>
+                                <li><a href="PapiraPoPrinteru.aspx">Evidencija papira po printeru</a></li>
+                             </ul>
+                        </li>
+                        <li><a href="Users.aspx">Korisnici</a>
+                            <ul>
+                                <li><a href="Users.aspx">Svi korisnici</a></li>
+                                <li><a href="Register.aspx">Dodaj korisnika</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="About.aspx">O aplikciji</a></li>
+                    </ul>
+            </nav>
+
+           <asp:Button ID="LogoutBttn" runat="server" Text="Logout" OnClick="LogoutBttn_Click" />
+           <asp:LoginName ID="LoginName1" runat="server" CssClass="loginName"/>
+        </div>
+
+        
+
+        <div class="wrapper">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"> 
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer>
+          <asp:Label ID="DateTimeLbl" runat="server" Text="Copyright: Antun Sabljak, TVZ 2016." CssClass="footerDateTime"></asp:Label>
+        </footer>
+    </div>
+    </form>
+</body>
+</html>

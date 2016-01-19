@@ -1,0 +1,358 @@
+﻿html {
+    height: 100%;
+}
+
+body {
+    background-color: white;
+    color: black;
+    font-family:Verdana;
+    padding:0px;
+    margin: 0px;
+    min-height:100%;
+}
+
+.wrapper {
+    margin:20px;
+    margin-top:50px;
+    margin-bottom:200px;
+}
+
+.header {
+    background-color: #607D8B;
+    padding:20px;
+}
+
+.header h1 {
+    color: #FF7A3D;
+    font-family: Verdana;
+}
+
+th a, td a{
+    text-decoration: none;
+    color: #2E3466;
+
+}
+
+th {
+    border-color:black;
+    color: #2E3466;
+}
+
+ tr:nth-child(2n) {
+    background-color:#CFD8DC;
+}
+
+.LoginTable tr, .RadioButtons tr{
+    background-color:white;
+}
+
+#LoginForm {
+    background-color: white;
+}
+
+.obavjest {
+    width:60%;
+    text-align:justify;
+}
+
+#rezLbl, #ContentPlaceHolder1_rezLbl {
+    background-color: #CFD8DC;
+    color: #FF7A3D;
+    font-family: Verdana;
+    font-size:28px;
+    font-weight: bold;
+    padding: 10px;
+    width: 340px;
+    display:inline-block;
+    text-align: left; 
+}
+
+
+.inputEl {
+    height:34px;
+    width: 120px;
+    background-color: #CFD8DC;
+    color: #FF7A3D;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size:15px;
+    border: 0px;
+    padding-left:10px;
+}
+
+#operacijeDropDown, #ContentPlaceHolder1_operacijeDropDown {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 70px;
+    font-size:26px;
+    background-color: #607D8B;
+    color: #FF7A3D;
+    font-family: Verdana;
+    position: relative;
+    top:4px;
+    border:0px;
+}
+
+#bttnRez, #ContentPlaceHolder1_bttnRez {
+    width:360px;
+    background-color: #607D8B;
+    color:#FF7A3D;
+    font-size: 36px;
+    padding-bottom: -10px;
+    padding-top: -10px;
+    border: 0px;
+}
+
+#izborUnosa, #ContentPlaceHolder1_izborUnosa {
+    display:none;
+    margin-top: 0px;
+}
+
+.izborBttn {
+    width:110px;
+    background-color: #607D8B;
+    color:#FF7A3D;
+    font-size: 16px;
+    margin: 5px;
+    padding:10px;
+    border: 0px;
+}
+
+.tablica {
+   margin-top: 50px;
+    width:60%;
+}
+
+.sirokaTablica {
+    margin-top: 50px;
+    width:80%;
+}
+
+.editTablica {
+   width:60%;
+   border-collapse: collapse;
+
+}
+
+.editTablica td {
+
+}
+
+.content {
+    color:black;
+    font-family:Verdana;
+    margin:20px;
+    min-height:300px;
+}
+
+.centar{
+    color:black;
+    font-family:Verdana;
+    min-height:300px;
+    text-align:left;
+    width:20%;
+    margin-left:40%;
+    margin-right:40%;
+    margin-top:100px;
+}
+
+.regForm {
+    color:black;
+    font-family: Verdana;
+    margin-left:20px;
+    margin-top: 50px;
+}
+
+.regForm span {
+    position:relative;
+    bottom: 5px;
+}
+
+.regForm input {
+    width: 200px;
+}
+
+/**NAVIGACIJA**/
+
+.navigacija {
+    background-color:#444;
+    padding-left: 12px;
+}
+nav {
+    margin:0;
+    padding:0;
+    width:100%;
+}
+
+nav a {
+    display: block;
+    width:100px;
+    background-color: #444;
+    padding:10px;
+    text-decoration: none;
+    font-family: Arial;
+    color: #FF7A3D;
+}
+
+nav a:hover {
+    background-color: #FF7A3D;
+    color: #444;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+  margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: -4px;
+}
+
+nav li ul {
+	position:absolute;
+	transition: 500ms;
+	visibility:hidden;
+	opacity:0;
+    width: 200px;
+}
+
+nav li:hover ul {
+	visibility: visible;
+	opacity:1;
+	transform: translateY(0);
+    width: 200px;
+}
+
+nav li li {
+	display:block;
+	margin-left:0px;
+    width: 200px;
+}
+
+nav li li a {
+	display: block;
+	font-weight: normal;
+    width: 200px;
+}
+
+nav ul li ul li {
+    display: block;
+    width: 200px;
+}
+
+/*************/
+
+.loginName {
+    float: right;
+    margin-top: -30px;
+    margin-right:120px;
+    color: #FF7A3D;
+}
+
+.btnUsr {
+    float: right;
+    margin-top: -30px;
+    margin-right:120px;
+}
+
+#LogoutBttn {
+    float:right;
+    margin-top: -39px;
+    background-color: #FF7A3D;
+    color:#444;
+    font-size: 20px;
+    padding: 5px;
+    width:100px; 
+    border: 0px;
+}
+
+#LogoutBttn:hover {
+    background-color:#FFF;
+    cursor:pointer;
+}
+
+#ContentPlaceHolder1_GridViewStudenti {
+    color:black;
+    font-family:Verdana;
+    text-align:left;
+    width:50%;
+    margin-left:25%;
+    margin-right:25%;
+    margin-top:50px;
+}
+
+#ContentPlaceHolder1_GridViewStudenti th {
+    text-align: center;
+    height:30px;
+    background-color:#B6CDD8; 
+}
+
+#ContentPlaceHolder1_GridViewStudenti tr:nth-child(2n+1) {
+    background-color:#FFEBE5;
+}
+
+#ContentPlaceHolder1_GridViewStudenti tr:last-child {
+     background-color:white;
+}
+
+#trazilica {
+    margin-left:25%;
+}
+
+#dodavanjeStudenta {
+    margin-left:20px;
+    color: black;
+}
+
+.grupaDropDown {
+    width: 150px;
+}
+
+.hidden input {
+    visibility: hidden;
+    border:5px solid red;
+    background-color:green;
+}
+
+.infoMessage {
+   
+    background-color: #A8DAFF;
+    padding: 12px;
+    margin-bottom: 0px;
+    font-family: Arial;
+    font-weight: 500;
+}
+
+.errorMessage {
+    background-color: rgba(231,76,60,0.6);
+    padding: 12px;
+    margin-bottom: 0px;
+    font-family: Arial;
+    font-weight: 500;
+}
+
+.literatura {
+    list-style-type: none;
+    line-height:1.5em;
+}
+
+footer {
+   background-color: #CFD8DC;
+   padding-top:40px;
+   padding-bottom:40px;
+   margin-top:80px;
+   position:fixed;
+   bottom:0px;
+   width:100%;
+}
+
+#DateTimeLbl {
+    display: inline-block;
+    font-family: Verdana;
+    color:#FF7A3D;
+    text-align: center;
+    width:100%;
+    margin-left: auto; margin-right: auto;
+}
